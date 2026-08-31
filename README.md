@@ -24,7 +24,7 @@ A API sobe em `http://localhost:3000`.
 | DELETE | `/usuarios/:id` | Remove um usuário                  |
 | POST   | `/upload`     | Upload de imagem (form-data, campo `imagem`) → retorna a URL pública no S3 |
 
-## Banco de dados
+## Banco de dados 
 
 Execute `src/db/schema.sql` no seu MySQL (RDS) antes de usar a API.
 
@@ -39,4 +39,4 @@ docker run -p 3000:3000 --env-file .env api-backend
 
 O pipeline em `.github/workflows/deploy-backend.yml` builda a imagem, publica no ECR
 com tag semântica e faz o deploy via SSH em uma instância EC2. Veja o `README.md`
-na raiz do projeto para o passo a passo completo.
+na raiz do projeto para o passo a passo completo...
